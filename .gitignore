@@ -1,0 +1,5 @@
+chess.log
+target/*
+.classpath
+.project
+.settings/*
