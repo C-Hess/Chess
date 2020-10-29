@@ -5,7 +5,7 @@ twitch-videoad.js application/javascript
 	window.fetch = function(input, init) {
 		if ( arguments.length >= 2 && typeof input === 'string' && input.includes('/access_token') ) {
 			var url = new URL(arguments[0]);
-			url.searchParams.set("player_type", "frontpage");
+			url.searchParams.set("player_type", "embed");
 			arguments[0] = url.href;
 		}
 		return realFetch.apply(this, arguments);
